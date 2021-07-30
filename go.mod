@@ -1,4 +1,4 @@
-module oxfordapi
+module github.com/zsichen/oxfordapi
 
 go 1.16
 
