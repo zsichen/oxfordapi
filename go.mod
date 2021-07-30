@@ -1,4 +1,4 @@
-module oxford
+module oxfordapi
 
 go 1.16
 
