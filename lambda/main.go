@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"os"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
@@ -11,9 +12,9 @@ import (
 )
 
 var (
-	appid  string
-	appkey string
-	lang   string
+	appid  = os.Getenv("app_id")
+	appkey = os.Getenv("app_key")
+	lang   = os.Getenv("lang")
 )
 
 func handleRequest(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
