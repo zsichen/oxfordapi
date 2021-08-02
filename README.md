@@ -1,5 +1,5 @@
-# oxfordapi
-Implement a golang version of oxfordapi
+# Oxfordapi
+Implement a golang version of Oxfordapi
 
-# Have a nice try!
+# Have a quick test!
 https://quest.hemoon.de/quest?word=obliviate
