@@ -28,5 +28,4 @@ jobs:
           aws_region: ${{ secrets.AWS_REGION }}
           function_name: oxfordapi
           zip_file: lambda/deployment.zip
-          handler: 
-          role: ${{ secrets.AWS_ROLE }}
+          handler: main
