@@ -32,8 +32,8 @@ func init() {
 }
 
 type LetterItem struct {
-	Id    string
-	Value string
+	Id    string `json:"id"`
+	Value string `json:"value"`
 }
 
 func GetLetterItem(id string) (val []byte, err error) {
@@ -46,7 +46,7 @@ func GetLetterItem(id string) (val []byte, err error) {
 	result, err = svc.GetItem(&dynamodb.GetItemInput{
 		TableName: aws.String(table),
 		Key: map[string]*dynamodb.AttributeValue{
-			"Id": {
+			"id": {
 				S: aws.String(id),
 			},
 		},
