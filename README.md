@@ -3,3 +3,4 @@ Implement a golang version of [Oxfordapi](https://developer.oxforddictionaries.c
 
 # Have a quick test!
 https://quest.hemoon.de/oxfordapi?word=obliviate
+*this site is running on AWS lambda*
